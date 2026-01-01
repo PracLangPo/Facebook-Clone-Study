@@ -1,0 +1,41 @@
+body{
+    background-color:gainsboro;
+}
+.horizontal-scroll-container{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    overflow: visible;
+}
+.post-card{
+    height: 300px;
+    width:150px;
+    display: inline-block;
+    margin:0 1px;
+    background-color: rgb(94, 137, 137);
+    border-radius: 5%;
+    transition:all 0.3s;
+    z-index: 1;
+}
+.post-card:hover{
+    transform: scale(1.2);
+    z-index: 2;
+    background-color: aqua;
+}
+.content-wrapper{
+    max-height: 110px;
+    display:inline;
+    overflow: visible;
+}
+.element::-webkit-scrollbar {
+    display: none;
+}
+.square-img{
+    height: 50%;
+    width:90%;
+    margin:20px auto;
+    background-color: rgb(166, 222, 222);
+}
+p{
+    text-align: center;
+}
